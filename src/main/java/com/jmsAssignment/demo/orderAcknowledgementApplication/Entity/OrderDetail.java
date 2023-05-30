@@ -1,85 +1,27 @@
 package com.jmsAssignment.demo.orderAcknowledgementApplication.Entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.List;
 
-public class OrderDetail {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderDetail implements Serializable {
     private Integer orderId;
-
-    public OrderDetail(Integer orderId, String customerName, String email, String shippingAddress, Integer orderItems, Double totalAmount, String status) {
-        this.orderId = orderId;
-        this.customerName = customerName;
-        this.email = email;
-        this.shippingAddress = shippingAddress;
-        this.orderItems = orderItems;
-        this.totalAmount = totalAmount;
-        this.status = status;
-    }
-    public OrderDetail(){
-
-    }
-
     private String customerName;
     private String email;
     private String shippingAddress;
-    private Integer orderItems;
+    private List<OrderItem> orderItems;
     private Double totalAmount;
-    private String status;
 
-    public Integer getOrderId() {
-        return orderId;
-    }
+    private LocalDate orderDate;
+    private OrderStatus status;
 
-    public void setOrderId(Integer orderId) {
-        this.orderId = orderId;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getShippingAddress() {
-        return shippingAddress;
-    }
-
-    public void setShippingAddress(String shippingAddress) {
-        this.shippingAddress = shippingAddress;
-    }
-
-    public Integer getOrderItems() {
-        return orderItems;
-    }
-
-    public void setOrderItems(Integer orderItems) {
-        this.orderItems = orderItems;
-    }
-
-    public Double getTotalAmount() {
-        return totalAmount;
-    }
-
-    public void setTotalAmount(Double totalAmount) {
-        this.totalAmount = totalAmount;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
     @Override
     public String toString() {
@@ -90,8 +32,8 @@ public class OrderDetail {
                 ", shippingAddress='" + shippingAddress + '\'' +
                 ", orderItems=" + orderItems +
                 ", totalAmount=" + totalAmount +
-                ", status='" + status + '\'' +
+                ", orderDate=" + orderDate +
+                ", status=" + status +
                 '}';
     }
-
 }

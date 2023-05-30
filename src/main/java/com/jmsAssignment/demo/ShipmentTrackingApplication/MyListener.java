@@ -12,9 +12,7 @@ import org.springframework.stereotype.Component;
 public class MyListener {
     private static final Logger logger =  LoggerFactory.getLogger(MyListener.class.toString());
     @JmsListener(destination = "${springjms.myQueue}")
-    public void receive(String orderDetail){
+    public void receive(OrderDetail orderDetail){
         logger.info("order received" + orderDetail);
-        System.out.println("message received" + orderDetail.toString());
-//        System.out.println(orderDetail.);
     }
 }

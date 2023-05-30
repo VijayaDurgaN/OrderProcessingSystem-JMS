@@ -15,7 +15,7 @@ public class MessageSender {
     @Value("${springjms.myQueue}")
     private String queue;
 
-    public void send(String message){
+    public void send(OrderDetail message){
         jmsTemplate.convertAndSend(queue,message);
     }
 }

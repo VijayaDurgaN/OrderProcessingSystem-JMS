@@ -1,4 +1,4 @@
-package com.jmsAssignment.demo.ShipmentTrackingApplication;
+package com.jmsAssignment.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.jms.annotation.EnableJms;
 
 @SpringBootApplication
 @EnableJms
-public class shipmentTrackingApplication {
+public class OrderProcessingSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(shipmentTrackingApplication.class, args);
+		SpringApplication.run(OrderProcessingSystemApplication.class, args);
 	}
 
 }

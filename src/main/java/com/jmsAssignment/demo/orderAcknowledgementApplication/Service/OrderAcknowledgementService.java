@@ -11,7 +11,7 @@ public class OrderAcknowledgementService {
     public MessageSender messageSender;
     public void sendOrderDetail(OrderDetail orderDetail) {
         System.out.println(orderDetail);
-        messageSender.send(orderDetail.toString());
+        messageSender.send(orderDetail);
 
     }
 }
