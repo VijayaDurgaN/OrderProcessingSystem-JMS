@@ -1,7 +1,7 @@
-package com.jmsAssignment.orderAcknowledgementApplication.Service;
+package com.jmsAssignment.demo.orderAcknowledgementApplication.Service;
 
-import com.jmsAssignment.orderAcknowledgementApplication.Entity.OrderDetail;
-import com.jmsAssignment.orderAcknowledgementApplication.MessageSender;
+import com.jmsAssignment.demo.orderAcknowledgementApplication.Entity.OrderDetail;
+import com.jmsAssignment.demo.orderAcknowledgementApplication.MessageSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

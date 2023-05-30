@@ -1,6 +1,6 @@
-package com.jmsAssignment.ShipmentTrackingApplication;
+package com.jmsAssignment.demo.ShipmentTrackingApplication;
 
-import com.jmsAssignment.orderAcknowledgementApplication.Entity.OrderDetail;
+import com.jmsAssignment.demo.orderAcknowledgementApplication.Entity.OrderDetail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.annotation.JmsListener;
