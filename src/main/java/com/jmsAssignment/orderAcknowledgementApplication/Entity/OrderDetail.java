@@ -1,4 +1,4 @@
-package com.jmsAssignment.demo.orderAcknowledgementApplication.Entity;
+package com.jmsAssignment.orderAcknowledgementApplication.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

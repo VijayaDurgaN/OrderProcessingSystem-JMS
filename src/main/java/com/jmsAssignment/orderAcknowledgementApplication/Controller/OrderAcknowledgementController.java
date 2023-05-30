@@ -1,7 +1,7 @@
-package com.jmsAssignment.demo.orderAcknowledgementApplication.Controller;
+package com.jmsAssignment.orderAcknowledgementApplication.Controller;
 
-import com.jmsAssignment.demo.orderAcknowledgementApplication.Entity.OrderDetail;
-import com.jmsAssignment.demo.orderAcknowledgementApplication.Service.OrderAcknowledgementService;
+import com.jmsAssignment.orderAcknowledgementApplication.Entity.OrderDetail;
+import com.jmsAssignment.orderAcknowledgementApplication.Service.OrderAcknowledgementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

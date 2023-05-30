@@ -1,6 +1,6 @@
-package com.jmsAssignment.demo.orderAcknowledgementApplication;
+package com.jmsAssignment.orderAcknowledgementApplication;
 
-import com.jmsAssignment.demo.orderAcknowledgementApplication.Entity.OrderDetail;
+import com.jmsAssignment.orderAcknowledgementApplication.Entity.OrderDetail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
